@@ -1,0 +1,59 @@
+:root{
+    --darkprimary:#191e29;
+    --lightprimary:#132d46;
+    /* --secondary:#01c38d; */
+    --secondary:gold;
+    --gray:#696e79;
+    --white:#fff;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--darkprimary) ;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+}
+
+/* login-start */
+
+.image{
+    background-image: url("../images/game-controller-5619105_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    background-repeat  : no-repeat ;
+   
+}
+
+.login-inpusts{
+    background: var(--lightprimary)
+}
+
+.icon i{
+    color: white;
+    font-size: 40px;
+}
+
+h1{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 56px;
+}
+
+h3{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.form input{
+    font-family: "Comfortaa", sans-serif;
+    font-weight:600;
+    
+}
+/* login-end */

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <link rel="icon" href="images/ico.png">
+
+
+    <!-- google-fonts  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- style  -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+</head>
+<body  >
+
+
+    <!-- navbar-start  -->
+    <nav class="mynav navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-gamepad"></i> GamesHub</a>
+          <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  menu">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" data-category="MMORPG">MMORPG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="SHOOTER">SHOOTER</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="SAILING">SAILING</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="PERMADEATH">PERMADEATH</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="SUPERHERO">SUPERHERO</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="PIXEL">PIXEL</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="PVP">PVP</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="ACTION">ACTION</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link user-name text-light" href="#">Ahmed</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light logout" href="#">LogOut</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar-end  -->
+    <header class="d-flex justify-content-center">
+      <img src="./images/header.png" class="w-100" >
+    </header>
+
+    <!-- games-data-start -->
+     <section class="games-section py-5 position-relative">
+        <div class="container">
+          <h1 class="text-center text-light pb-lg-1">Top Free Games 2024 - <span id="category-text"></span> </h1>
+          <div class="row g-4" id="data-place">
+            <!-- <div class="col-lg-3 col-xlg-3">
+              <div class="inner">
+                <div class="card " style="width: 18rem;">
+                  <figure class="position-relative p-2 mb-0">
+                    <img src="https://www.freetogame.com/g/572/thumbnail.jpg" class="card-img-top" alt="game thumbnail">
+                    <video muted  loop class="position-absolute top-0 start-0 w-100 h-100 z-3" >
+                      <source  src="https://www.freetogame.com/g/380/videoplayback.webm">
+                    </video>
+                  </figure>
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Ravendawn</h5>
+                    <p class="card-text">A 2D top-down MMORPG featuring homesteading and building mechanics.</p>
+
+                    <div class="badges d-flex justify-content-around mb-2">
+                      <span class="badge text-bg-primary">PC (Windows)</span>
+                      <span class="badge text-bg-primary">MMORPG</span>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                      <a class="btn playnow-btn mb-3" href="https://www.freetogame.com/open/ravendawn" target="_blank"><i class="fa-solid fa-shield-halved"></i> Play Now</a>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer text-body-secondary d-flex justify-content-between">
+                    <span>release_date</span>
+                    <span>2024-01-16</span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="loading position-absolute top-0 start-0 w-100 h-100 d-none justify-content-center align-items-center">
+          <span class="loader"></span>
+        </div>
+     </section>
+
+     <section class="detail-section d-none">
+      <div class="container">
+        <div class="header d-flex justify-content-between text-light">
+          <h2>Details Game</h2>
+          <div class="close-icon">
+            <i class="fa-solid fa-xmark fs-4"></i>
+          </div>
+        </div>
+
+        <div class="row mt-2 details-row">
+          <!-- <div class="col-lg-4">
+            <div class="inner">
+              <img src="https://www.freetogame.com/g/532/thumbnail.jpg" alt="image of the game" class="w-100">
+            </div>
+          </div>
+          <div class="col-lg-8 ">
+            <div class="inner text-light d-flex flex-column row-gap-2">
+              <h3 class="mt-2 mt-lg-0">Title: Throne And Liberty</h3>
+              <span>Category: <span class="badge text-bg-primary">MMORPG</span></span>
+              <span>Platform: <span class="badge text-bg-primary">Windows</span></span>
+              <span>Status: <span class="badge text-bg-primary">Live</span></span>
+              <p>Throne and Liberty is a free-to-play multi-platform MMORPG from NCSoft and Amazon Games. The open-world game features large-scale PvPvE in which players can explore everything from sprawling plains to mountain peaks. To survive, players will need to be able to adapt and make decisions based on weather, time of day, and – of course – what other players are doing. The ultimate goal is to claim the throne by defeating Kazar. To do this, players will need to make use of the ability to transform and take the battle to not just the land, but also the sea and air. The game features cross-play bringing together players on PC, Xbox Series X}S, and PlayStation 5. Players on the PS5 can choose to disable cross-play. It’s also worth noting that cross-progression is not supported.</p>
+              <div class="d-flex justify-content-start column-gap-3">
+                <a class="btn profile-btn mb-3" href="https://www.freetogame.com/world-of-runes" target="_blank"><i class="fa-brands fa-fantasy-flight-games"></i> Game Profile</a>
+                <a class="btn playnow-btn mb-3" href="https://www.freetogame.com/open/ravendawn" target="_blank"><i class="fa-solid fa-shield-halved"></i> Play Now</a>
+              </div>
+            </div>
+
+          </div> -->
+        </div>
+
+
+
+      </div>
+
+     </section>
+    <!-- games-data-end  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script  type="module" src="js/index.js"></script>
+</body>
+</html>
